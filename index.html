@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Data Object</title>
 </head>
 <body>
     <div class="wrapper">
         <main class="content">
             <h1 class="content-title">
-                Data-Object. Getting data & time values
+                Data-Object. Getting the current data & time values
             </h1>
-            <section class="fullData-output">
-
-            </section>
-            <section class="briefData-output">
-
-            </section>
-            <button class="start-button" id="button">
-                <span class="start-button__span">
+            <div class="data-output">
+                <p class="fullData-output" id="formatA" style="display: none;">
                     
-                </span>
-            </button>
+                </p>
+                <p class="briefData-output" id="formatB" style="display: none;">
+    
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="get-button" id="button">
+                    <span class="get-button__span">
+                        Get Data
+                    </span>
+                </button>
+                <button class="start-button" id="button">
+                    <span class="start-button__span">
+                        Start/Pause updating
+                    </span>
+                </button>
+            </div>
         </main>
     </div>
 
-    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

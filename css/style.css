@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, *:before, *::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+:root
+{
+    --main-f-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+    --main-f-color: white;
+    --main-bg-color: #262634;
+}
+
+html, body
+{
+    min-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--main-f-size);
+    color: var(--main-f-color);
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+}
+
+.wrapper
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35vh 0px 0px 0px;
+}
+
+main.content
+{
+    max-width: 800px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main.content > *
+{
+    margin: 0px 0px 40px 0px;
+}
+
+.content-title 
+{
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.content-title::after
+{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-f-color);
+}
+
+#formatA, #formatB
+{
+    font-size: 1.2rem;
+}
+
+#formatA
+{
+    margin: 0px 0px 20px 0px;
+}
+
+#button
+{
+    padding: 8px 6px;
+    background-color: var(--main-f-color);
+    border: 0;
+    border-radius: 2px;
+}
+
+#button span
+{
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--main-bg-color);
+}
+
+#button:last-child
+{
+    margin: 0px 0px 0px 20px;
+}
